@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  lat: MyString
+  lng: MyString
+  day: MyString
+  locattionable: one
+  locattionable_type: Locattionable
+
+two:
+  lat: MyString
+  lng: MyString
+  day: MyString
+  locattionable: two
+  locattionable_type: Locattionable
