@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   defaults format: :json do
     namespace :api do
       namespace :v1 do
-        get 'get_route/:id', to: 'routes#get'
-        put 'pickup/:id', to: 'pickup#create'
+        resources :routes, only: [:show]
+        resources :pickup, only: [:create]
       end
     end
   end
