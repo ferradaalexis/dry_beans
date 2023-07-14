@@ -1,7 +1,7 @@
 module Api
   module V1
     class RoutesController < ApplicationController
-      def get
+      def show
         @route = Route.find_by(id: params[:id])
         if @route
           render json: @route, status: :ok
